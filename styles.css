@@ -11,3 +11,15 @@ body {
   background: linear-gradient(-135deg, #25FFE9, #337e78);
 }
 
+.container {
+  width: 40%;
+  min-width: 450px;
+  background-color: #1c1e21;
+  padding: 80px 30px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  border-radius: 8px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .50);
+}
