@@ -7,7 +7,7 @@ const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXWZabcdefghijklmnopqrstuvwxwz!\"$%&/(
 
 let output = document.getElementById("output");
 
-const randomValue(value) {
+const randomValue = (value) => {
   return Math.floor(Math.random()*value);
 }
 
@@ -20,7 +20,9 @@ const genPassword = () => {
 
   for(let i=0; i<length; i++){
     let random = randomValue(characters.length);
+    str += characters.charAt(random);
   }
+  output.value = str;
 }
 
 genPassword();
