@@ -8,6 +8,13 @@ const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXWZabcdefghijklmnopqrstuvwxwz!\"$%&/(
 let output = document.getElementById("output");
 
 const genPassword = () => {
+  //Updating numbers in the right h3 by moving the input range
   let length = document.getElementById('length').value;
   document.getElementById("length-val").textContent = length;
+
+  let str = '';
+
+  for(let i=0; i<length; i++){
+    let random = randomValue(characters.length);
+  }
 }
