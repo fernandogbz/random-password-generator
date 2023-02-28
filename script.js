@@ -25,4 +25,10 @@ const genPassword = () => {
   output.value = str;
 }
 
+const copyClipboard = () => {
+  output.select();
+  document.execCommand('copy');
+  alert("Password Copied!");
+} 
+
 genPassword();
